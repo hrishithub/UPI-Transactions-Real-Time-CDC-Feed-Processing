@@ -9,7 +9,7 @@ In digital payment ecosystems, it's crucial to process transaction changes (stat
 ## Architecture
 The solution runs entirely within Databricks, with two scheduled notebooks:
 - Mock Data Generator Notebook: Simulates UPI transaction events (inserts and updates) via Delta Lake merge operations to a source table.
-- Real-Time Aggregator Notebook: Reads changes using Delta’s Change Data Feed (CDF) and applies micro-batch aggregations using Structured Streaming.
+- Real-Time Aggregator Notebook: Reads changes using Delta’s read Change Data Feed (CDF) and applies micro-batch aggregations using Structured Streaming.
 
 ## Technology Used
 - Databricks
