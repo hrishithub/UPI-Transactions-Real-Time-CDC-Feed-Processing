@@ -33,7 +33,7 @@ Transactions evolve through different statuses: initiated, completed, failed, re
 
 #### realtime_merchant_aggregation.ipynb
 - Consumes CDC feed from the source table using readChangeFeed.
- Filters for inserts and update_postimage change types.
+- Filters for inserts and update_postimage change types.
 - Aggregates total sales, total refunds, and net sales per merchant.
 - Upserts the aggregated results into a target Delta table aggregated_upi_transactions.
 
