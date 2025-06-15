@@ -19,7 +19,7 @@ The solution runs entirely within Databricks, with two scheduled notebooks:
 - PySpark
 
 ## Dataset Used
-No external dataset was used in this project. Instead, mock data was generated to simulate real-world UPI merchant payment transactions. The data captures various state transitions (e.g., initiated → completed → refunded) to effectively model real-time transaction updates and enable Change Data Capture (CDC) processing in the pipeline.
+No external dataset was used in this project. Instead, mock data was generated to simulate real-world UPI merchant payment transactions. The data captures various state transitions (e.g., initiated → completed → refunded) to effectively model real-time transaction updates to capture those changes in data and enable Change Data Capture (CDC) processing in the pipeline.
 
 - `raw_upi_transactions`: transaction_id, upi_id, merchant_id, transaction_amount, transaction_timestamp, transaction_status
 
